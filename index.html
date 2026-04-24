@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToYousJoyous | Home</title>
+    <style>
+      :root {
+        --ink: #1f1636;
+        --lavender: #a38bff;
+        --pink: #ff87b7;
+        --cream: #fff8ee;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--ink);
+        background: radial-gradient(circle at top, #f0e8ff 0%, #fff 45%, var(--cream) 100%);
+        display: grid;
+        place-items: center;
+      }
+
+      main {
+        width: min(900px, 92vw);
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #e8dcff;
+        border-radius: 24px;
+        padding: 3rem 2rem;
+        box-shadow: 0 18px 48px rgba(70, 41, 130, 0.12);
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        background: #efe6ff;
+        color: #5f45b3;
+        font-size: 0.85rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        margin: 0.7rem 0 0.4rem;
+        line-height: 1.1;
+      }
+
+      .subtitle {
+        font-size: clamp(1rem, 2.4vw, 1.25rem);
+        margin: 0;
+        color: #4f3f80;
+      }
+
+      .cta-row {
+        margin-top: 1.7rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+
+      a.button {
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.75rem 1.15rem;
+        border-radius: 12px;
+        border: 1px solid transparent;
+      }
+
+      a.primary {
+        background: linear-gradient(90deg, var(--lavender), var(--pink));
+        color: #fff;
+      }
+
+      a.secondary {
+        border-color: #d6c8ff;
+        color: #5f45b3;
+        background: #faf7ff;
+      }
+
+      .highlights {
+        margin-top: 2rem;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+      }
+
+      .highlights li {
+        border: 1px solid #efebfb;
+        border-radius: 14px;
+        background: #fff;
+        padding: 1rem;
+      }
+
+      footer {
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        color: #6d6592;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="tag">Welcome</span>
+      <h1>ToYousJoyous.com</h1>
+      <p class="subtitle">A happy little corner for playful ideas, bright moments, and creative spark.</p>
+
+      <div class="cta-row">
+        <a class="button primary" href="#">See What's New</a>
+        <a class="button secondary" href="#">Join the Joy List</a>
+      </div>
+
+      <ul class="highlights">
+        <li><strong>Tiny Projects</strong><br />Fun builds that make everyday life a little brighter.</li>
+        <li><strong>Joy Notes</strong><br />Short reads with upbeat energy and practical positivity.</li>
+        <li><strong>Community Picks</strong><br />Favorites shared by kind, creative people.</li>
+      </ul>
+
+      <footer>Built with joy 💜 © 2026 ToYousJoyous</footer>
+    </main>
+  </body>
+</html>
